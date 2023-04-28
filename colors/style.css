@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #121212;
+
+  background: url("pattern.png");
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px 25px;
+  margin: 20px auto;
+
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.title {
+  /* color: #fff; */
+
+  /* rgb менее популярен */
+  /* color: rgb(241, 36, 61); */
+
+  /* color: rgb(241, 36, 61, 0.5); */
+
+  /* color: rgb(255, 255, 255, 0.1); */
+
+  color: #fff;
+}

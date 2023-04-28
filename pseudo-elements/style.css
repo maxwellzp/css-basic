@@ -1,0 +1,50 @@
+/* Pseudo */
+.pseudo-title {
+  margin: 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.pseudo-title::before {
+  content: "";
+  display: block;
+  margin: 5px auto;
+  width: 226px;
+  height: 3px;
+
+  background-color: #d03014;
+}
+
+.pseudo-title::after {
+  content: "";
+  display: block;
+  margin: 5px auto;
+  width: 226px;
+  height: 3px;
+
+  background-color: #274fbc;
+}
+
+/* .pseudo-title::before,
+.pseudo-title::after {
+  color: #d42e2e;
+}
+
+.pseudo-title::before {
+  content: "1.";
+  font-size: 15px;
+}
+.pseudo-title::after {
+  content: " !";
+  font-size: 30px;
+} */
+
+/* Абзацы которые находятся в pseudo-text*/
+.pseudo-text p:first-letter {
+  color: blue;
+  font-size: 20px;
+}
+
+.pseudo-text p::first-line {
+  color: #d81e1e;
+}

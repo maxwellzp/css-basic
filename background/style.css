@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+
+  /* background-color: #eee; */
+  /* background-image: url("./img/pattern.png"); */
+  /* background-repeat: repeat-y; */
+  /* background-repeat: repeat-x; */
+  /* значение по умолчанию = repeat */
+  /* background-repeat: repeat; */
+  background-size: 200px 200px;
+
+  background: #eee url("./img/pattern.png");
+}
+
+.post {
+  width: 700px;
+  height: 400px;
+  padding: 15px 25px;
+  /* margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px; */
+
+  margin: 0 auto 20px;
+
+  border: 1px solid #ddd;
+  background-color: #fff;
+  background-image: url("./img/bg.jpg");
+  background-repeat: no-repeat;
+  /* растянуть фото на всю страницу */
+  /* background-size: 100% auto; */
+  background-size: cover;
+  /* background-size: 200px 200px; */
+  /* background-position: center center; */
+  /* background-position: 100px 100px; */
+  background-position: center;
+
+  /* 
+  background: #fff url("./img/bg.jpg") no-repeat center;
+  background-size: cover; 
+  */
+}
+
+.post-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  color: #1566c6;
+}
+.post-text {
+  color: #ffffff;
+}
+
+/* работа с абзацами расположеными в .post-text */
+.post-text p {
+  margin: 0 0 10px 0;
+}
+
+.gradient {
+  width: 600px;
+  height: 300px;
+  margin: 0 auto;
+
+  /* background-image: linear-gradient(to top, #fff, #333); */
+  /* background-image: linear-gradient(to bottom, #fff, #333); */
+  /* background-image: linear-gradient(to right, #fff, #333); */
+  /* background-image: linear-gradient(to left, #fff, #333); */
+  /* background-image: linear-gradient(45deg, #fff, #333); */
+  /* background-image: linear-gradient(180deg, #fff, #333, #fff); */
+  /* background-image: linear-gradient(to bottom, #fff 50%, #333 50%); */
+  /* background-image: linear-gradient(to right, #fff 50%, #333 50%); */
+  background-image: linear-gradient(to left, #fff 50%, #333 50%);
+
+  /* пример градиента */
+  /* background-image: linear-gradient(
+    to left,
+    #fff 20%,
+    #333 20%,
+    #333 40%,
+    #fff 40%,
+    #fff 60%,
+    #333 60%,
+    #333 80%,
+    #fff 80%
+  ); */
+
+  background-image: radial-gradient(circle, #fff, #333);
+}

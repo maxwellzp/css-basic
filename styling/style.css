@@ -1,0 +1,53 @@
+/*====
+ 1. About
+ 2. Container
+===*/
+
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  color: #121212;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* 1. About
+===================*/
+
+/* 2. Container
+===================*/
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 1rem;
+  margin: 20px auto;
+
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  color: #ccc;
+
+  background-color: #eee;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.title {
+  margin: 0 0 1rem;
+
+  font-size: 2rem;
+  color: #121212;
+}

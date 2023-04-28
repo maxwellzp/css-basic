@@ -1,0 +1,52 @@
+/*
+    Подключение локального шрифта
+*/
+
+@font-face {
+  font-family: "TTChocolates";
+  src: url("./font/TTChocolates-Regular.woff") format("woff"),
+    url("./font/TTChocolates-Regular.woff2") format("woff2");
+}
+
+/*
+    Подключаем тот же шрифт, но с жирным начертанием.
+*/
+
+@font-face {
+  font-family: "TTChocolates";
+  src: url("./font/TTChocolates-Bold.woff") format("woff"),
+    url("./font/TTChocolates-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+/*
+    Подключаем тот же шрифт, но с курсивом.
+*/
+
+@font-face {
+  font-family: "TTChocolates";
+  src: url("./font/TTChocolates-Italic.woff") format("woff"),
+    url("./font/TTChocolates-Italic.woff2") format("woff2");
+  font-style: italic;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* .title {
+  font-family: "Comfortaa", cursive;
+} */
+
+.title {
+  font-family: "TTChocolates", cursive;
+}
+
+.test-message {
+  font-family: "TTChocolates", sans-serif;
+}
+
+.italic {
+  font-family: TTChocolates;
+  font-style: italic;
+}

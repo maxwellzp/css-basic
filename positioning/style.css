@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+}
+
+/* Modal */
+
+.modal {
+  width: 500px;
+  height: 300px;
+  margin: 20px auto;
+  padding: 15px;
+  position: relative;
+
+  background-color: #eee;
+}
+
+.modal-title {
+  margin: 0;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+
+  background-color: #333;
+
+  position: absolute;
+  /* position: absolute; */
+  /* top: 10px; */
+  right: -10px;
+  top: -10px;
+  z-index: 2;
+}
+
+/* если у элемента есть класс square и red */
+.square.red {
+  background-color: #d41717;
+  right: -15px;
+  top: -5px;
+  z-index: 1;
+}
+
+.square-fixed {
+  width: 50px;
+  height: 100px;
+  /* высота деленная на два. 100 / 2 = 50px */
+  margin-top: -50px;
+  /*ширина деленная на два*/
+  margin-left: -25px;
+
+  background-color: #1165ad;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* top: 0;
+  left: 0; */
+}

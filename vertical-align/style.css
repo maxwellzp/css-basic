@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #121212;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  margin: 20px auto;
+}
+
+.table {
+  width: 100%;
+}
+
+.table th {
+  padding: 8px;
+  background-color: #eee;
+}
+
+.table td {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  /* вертикальное выравнивание. middle значение по умолчанию */
+  vertical-align: middle;
+  /* vertical-align: top; */
+  /* vertical-align: bottom */
+}

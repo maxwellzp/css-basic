@@ -1,0 +1,21 @@
+.text-red {
+  display: inline-block;
+  width: 100px;
+  /* margin: 10px; */
+  color: #ce2424;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* .content {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+/* Сделать контент страницы по центру */
+.page {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}

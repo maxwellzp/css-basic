@@ -1,0 +1,93 @@
+/* Forms */
+.form {
+  width: 500px;
+  padding: 20px;
+  margin: auto;
+
+  background-color: #fff;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-input {
+  display: block;
+  padding: 5px;
+
+  border: 1px solid #000;
+
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+.form-input:focus {
+  outline: none;
+  background-color: #bddbff;
+}
+
+.form-textarea {
+  width: 200px;
+  height: 150px;
+  padding: 5px;
+
+  border: 1px solid #000;
+  font-family: Arial, sans-serif;
+}
+
+.form-textarea:focus {
+  outline: none;
+  background-color: #bddbff;
+}
+
+.link {
+  color: #1d76dd;
+  text-decoration: none;
+}
+
+/* visited должен быть до hover*/
+.link:visited {
+  color: #7c25d3;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+/* после hover */
+/* .link:active {
+} */
+
+.btn {
+  padding: 5px 10px;
+  background-color: #43ac14;
+  border: 1px solid #3a9112;
+  color: #fff;
+
+  /* добавляем плавность*/
+  /* transition: background 0.2s linear, border-color 0.2s linear; */
+  /* all обычно не используется*/
+  /* transition: all 0.2s linear; */
+  transition: background 0.2s linear;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #3a9112;
+  border-color: #2c710c;
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: #2c760a;
+}
+
+.btn:disabled {
+  background-color: #444;
+  color: #808080;
+  cursor: not-allowed;
+  border: 1px solid #444;
+}

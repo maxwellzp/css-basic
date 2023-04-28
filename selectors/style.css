@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #121212;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 15px;
+  margin: 20px auto;
+}
+
+.text {
+  margin-bottom: 40px;
+}
+
+/* получить доступ ко всем p в блоке с классом .text*/
+/* вне зависимости от уровня */
+/* .text p {
+  color: red;
+} */
+
+/*только для дочерних элементов*/
+/*прямые потомки*/
+/* знак больше */
+/* .text > p {
+  color: red;
+} */
+
+/* первый p в блоке .text */
+.text > p:first-of-type {
+  color: red;
+}
+
+/* последний p в блоке .text */
+.text > p:last-of-type {
+  color: yellow;
+}
+
+.text span {
+  background-color: #eee;
+}
+
+/* span у которого есть атрибут title */
+.text span[title] {
+  text-decoration: underline;
+}
+
+/* точное совпадение со значением атрибута*/
+.text span[title="Text"] {
+  text-decoration: overline;
+}
+
+.list {
+  margin-bottom: 40px;
+}
+
+/* Первый дочерний элемент */
+.list li:first-child {
+  color: blue;
+}
+
+/* Последний дочерний элемент */
+.list li:last-child {
+  color: rgb(173, 85, 37);
+}
+
+/* 2-й дочерний элемент */
+.list li:nth-child(2) {
+  color: rgba(170, 238, 172, 0.933);
+}
+
+/* 3-й дочерний элемент */
+.list li:nth-child(3) {
+  color: rgba(238, 170, 212, 0.933);
+}
+
+/* нечетные элементы*/
+.list li:nth-child(odd) {
+  color: rgba(220, 220, 20, 0.933);
+}
+
+/* четные элементы*/
+.list li:nth-child(even) {
+  color: rgba(185, 11, 58, 0.933);
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* четные строки */
+.table tbody tr:nth-child(even) {
+  background-color: #eee;
+}
+/* не четные строки */
+.table tbody tr:nth-child(odd) {
+  background-color: greenyellow;
+}
+
+.label {
+  color: #ccc;
+}
+
+/* получить доступ к следующему элементу */
+/* следующий элемент в верстке это лэйбл */
+.checkbox:checked + .label {
+  color: #000;
+}

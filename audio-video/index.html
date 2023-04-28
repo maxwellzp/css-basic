@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- <video
+      src="./files/video.mp4"
+      width="720px"
+      height="405px"
+      controls
+      muted
+      autoplay
+      loop
+    ></video> -->
+
+    <!-- <video
+      src="./files/video.mp4"
+      width="720px"
+      height="405px"
+      controls
+      poster="./files/poster.jpg"
+    ></video> -->
+
+    <video width="720px" height="405px" controls poster="./files/poster.jpg">
+      <source src="./files/video.mp4" type="video/mp4" />
+      <!-- <source src="./files/video.avi" type="video/avi" /> -->
+      <p>Ваш браузер не поддерживает HTML5 video</p>
+    </video>
+
+    <!-- <audio src="./files/audio.mp3" controls></audio> -->
+
+    <audio controls>
+      <source src="./files/audio.mp3" type="audio/mpeg" />
+      <p>Ваш браузер не поддерживает HTML5 audio</p>
+    </audio>
+
+    <iframe
+      width="720"
+      height="405"
+      src="https://www.youtube.com/embed/iE39q-IKOzA"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

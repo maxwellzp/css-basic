@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+}
+
+p {
+  /* сделать отступ для первой строки в 20 пикселов */
+  text-indent: 20px;
+}
+
+.title {
+  font-family: Tahoma, sans-serif;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: -1px;
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
+/* normal = 400 */
+/* bold = 700 */
+
+.justify {
+  text-align: justify;
+  font-weight: normal;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+ul {
+  list-style-type: square;
+  list-style-position: outside;
+  color: #114eaf;
+}
+
+ol {
+  list-style-type: decimal-leading-zero;
+}

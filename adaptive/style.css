@@ -1,0 +1,112 @@
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  color: #121212;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 1rem;
+  margin: 20px auto;
+
+  background-color: #eee;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  height: 100px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.red {
+  background-color: #e03333;
+}
+
+.green {
+  background-color: #84b10d;
+}
+
+.blue {
+  background-color: #0d59d3;
+}
+
+.title {
+  margin: 0 0 1rem;
+
+  font-size: 2rem;
+  color: #121212;
+}
+
+/* Media*/
+/* этот запрос будет срабатывать, если ширина экрана 800 пикселов или меньше */
+@media (max-width: 800px) {
+  .container {
+    background-color: #ccc;
+  }
+  .flex-item {
+    flex-basis: 50%;
+  }
+}
+
+/* Если размер меньше или равна 600 пикселов, то сделать элементы в столбик*/
+@media (max-width: 600px) {
+  .flex-item {
+    flex-basis: 100%;
+  }
+  .red {
+    order: 1;
+  }
+  .blue {
+    order: 2;
+  }
+  .green {
+    order: 3;
+  }
+}
+
+/* Если высота экрана меньше или равна 400 пикселов, тогда применить */
+@media (max-height: 400px) {
+  .flex-item {
+    height: 200px;
+  }
+}
+
+@media (orientation: landscape) {
+  .flex-item {
+    /* background-color: aqua; */
+    height: 200px;
+  }
+}
+
+@media (orientation: portrait) {
+  .flex-item {
+    /* background-color: aqua; */
+    height: 200px;
+  }
+}
+
+/* можно комбинировать условия*/
+@media (max-height: 350px) and (orientation: landscape) {
+  .flex-item {
+    /* background-color: aqua; */
+    height: 200px;
+  }
+}

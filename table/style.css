@@ -1,0 +1,27 @@
+.table {
+  width: 100%;
+  border: 1px dashed #000;
+  /* объединение границ ячеек */
+  border-collapse: collapse;
+  /* одинаковая ширина ячеек */
+  table-layout: fixed;
+}
+
+/* th который находится в .table */
+.table th {
+  text-align: left;
+  color: #b20a0a;
+}
+
+.table td {
+  /* padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px; */
+  padding: 5px 10px;
+  border: 1px dashed #000;
+}
+
+.table tfoot td {
+  text-align: right;
+}
